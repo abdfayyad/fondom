@@ -42,6 +42,8 @@ dependencies:
   like_button: ^2.0.5
   conditional_builder_null_safety: ^0.0.6
   drop_shadow_image: ^0.9.1
+  sliding_up_panel: ^2.0.0+1
+  scroll_app_bar: ^2.0.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
