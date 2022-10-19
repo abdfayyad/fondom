@@ -6,6 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../util/componantes/defaltbuttom.dart';
 import '../../../util/componantes/verifytextfield.dart';
+import '../../signup_screen/prisentation/signup.dart';
 import 'bloc/cubit.dart';
 import 'bloc/states.dart';
 
@@ -150,7 +151,7 @@ class VerifyScreen extends StatelessWidget {
                   ),
                   defaultbutton(
                       function: () {
-                       // Navigator.of(context).push(MaterialPageRoute(builder: (context)=>LoginScreen()));
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>SignUpScreen()));
 
                         print(_controller[0].text +
                             _controller[1].text +
@@ -160,10 +161,12 @@ class VerifyScreen extends StatelessWidget {
                             _controller[5].text);
                       },
                       text: 'Verify',
+                    textColor: Colors.white,
                       width: 303.w,
                       height: 46.h,
                       fontSizeText: 18.sp,
-                      backround: Color(0xFF6E1EFF)),
+                    backround: Color(0xff5A729E),
+                      ),
                 ],
               ),
             ),

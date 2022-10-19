@@ -139,16 +139,16 @@ class _MusicPlayerState extends State<MusicPlayer> {
                                     isLiked
                                         ? Icons.favorite
                                         : Icons.favorite_border_outlined,
-                                    color: isLiked ? Colors.red : Colors.black,
+                                    color: isLiked ? Colors.red : Color(0xff666666),
                                     size: 35,
                                   );
                                 },
                                 padding: EdgeInsets.all(10),
                               ),
-                              ImageIcon(
+                              const ImageIcon(
                                 AssetImage("assets/images/coo.png"),
-                                color: Colors.black,
-                                size: 35,
+                                color: Color(0xff666666),
+                                size: 45,
                               ),
                             ],
                           ),

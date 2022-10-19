@@ -3,10 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 Widget defaultbutton({
-  Color backround = Colors.blue,
+ required Color backround ,
   double width = 300.0,
   double height = 48,
   double radius = 30.0,
+  Color ?textColor,
   double fontSizeText = 18,
   required String text,
   required Function() function,
@@ -19,7 +20,7 @@ Widget defaultbutton({
 
       child: Text(
         text,
-        style: TextStyle(fontSize: fontSizeText,color: Colors.white),
+        style: TextStyle(fontSize: fontSizeText,color: textColor),
       ),
     ),
     decoration: BoxDecoration(

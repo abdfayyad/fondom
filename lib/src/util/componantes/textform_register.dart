@@ -18,6 +18,7 @@ Widget myTextField({
       width: width,
       child: TextFormField(
       //  style: TextStyle(),
+
         controller: controller,
         keyboardType: keyboardType,
         onFieldSubmitted: onFieldSubmitted,
@@ -27,6 +28,7 @@ Widget myTextField({
           }
           return null;
         },
+
         obscureText: obscureText,
         decoration: InputDecoration(
             labelText: labelText,

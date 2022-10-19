@@ -24,19 +24,19 @@ Widget MyVerifyTextField({
         LengthLimitingTextInputFormatter(1),
         FilteringTextInputFormatter.digitsOnly,
       ],
-      style: TextStyle(color: Color(0xffFF2FE7)),
+      style: TextStyle(color: Color(0xff424343)),
       decoration: InputDecoration(
 
-        hintText:'0',hintStyle: TextStyle(color: Color(0xffFF2FE7)),
-        labelStyle: TextStyle(color: Color(0xffFF2FE7)),
+        hintText:'0',hintStyle: TextStyle(color: Color(0xff424343)),
+        labelStyle: TextStyle(color: Color(0xff424343)),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(22.0),
           borderSide: BorderSide(
-            color: Color(0xFF6E1EFF),
+            color: Color(0xFF2F4B7D),
             width: 2.0,
           ),
         ),
-        border: OutlineInputBorder(borderRadius: BorderRadius.circular(22),borderSide: BorderSide(color: Color(0xFF6E1EFF))),),
+        border: OutlineInputBorder(borderRadius: BorderRadius.circular(22),borderSide: BorderSide(color: Color(0xFF2F4B7D))),),
     ),
   );
 }

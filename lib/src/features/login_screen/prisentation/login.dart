@@ -2,6 +2,7 @@ import 'package:conditional_builder_null_safety/conditional_builder_null_safety.
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:fondom2/src/features/Verify_screen/prisentation/verify_screen.dart';
 import 'package:fondom2/src/features/music_player/music_player.dart';
 
 import '../../../util/componantes/defaltbuttom.dart';
@@ -85,7 +86,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           prefixIcon: const Icon(Icons.email),
                           validatorValue: 'emil address must not be empty',
                           labelText: 'Email',
-                          hintText: 'Enter Your Emil Address',
+                         // hintText: 'Enter Your Emil Address',
                           keyboardType: TextInputType.emailAddress,
                         ),
                         SizedBox(
@@ -99,7 +100,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             prefixIcon: const Icon(Icons.lock),
                             labelText: 'password',
                             obscureText: LoginCubit.get(context).isPasswordShow,
-                            hintText: 'Enter Your Password',
+                           // hintText: 'Enter Your Password',
                             suffixIcon: IconButton(
                               onPressed: () {
                                 LoginCubit.get(context)
@@ -116,7 +117,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               // }
                             }),
                         SizedBox(
-                          height: 35.h,
+                          height: 26.h,
                         ),
                         Center(
                           child: ConditionalBuilder(
@@ -131,16 +132,30 @@ class _LoginScreenState extends State<LoginScreen> {
                                   //   }
                                 },
                                 text: 'Login',
+                                textColor: Colors.white,
                                 width: 259.w,
                                 height: 48.h,
                                 fontSizeText: 18.sp,
-                                backround: const Color(0xFF6E1EFF)),
+                                backround: const Color(0xFF5A729E)),
                             fallback: (context) =>
                                 const CircularProgressIndicator(),
                           ),
                         ),
                         SizedBox(
-                          height: 20.h,
+                          height: 16.h,
+                        ),
+                        Center(
+                          child: TextButton(
+                              onPressed: () {
+                                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>VerifyScreen()));
+
+                              },
+                              child: const Text(
+                                'Forget  your password ?',
+                                style: TextStyle(
+
+                                    fontSize: 14, color: Color(0xff44567B)),
+                              )),
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -157,7 +172,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 child: const Text(
                                   'Sign up',
                                   style: TextStyle(
-                                      fontSize: 14, color: Color(0xff6449C1)),
+                                      fontSize: 14, color: Color(0xff44567B)),
                                 ))
                           ],
                         )

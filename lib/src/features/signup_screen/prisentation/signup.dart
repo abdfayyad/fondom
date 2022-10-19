@@ -6,6 +6,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../util/componantes/defaltbuttom.dart';
 import '../../../util/componantes/textform_register.dart';
 import '../../Verify_screen/prisentation/verify_screen.dart';
+import '../../profile/prisintation/profile/profile_page.dart';
+import '../../profile/prisintation/widget/profile/profile_page.dart';
 import 'bloc/cubit.dart';
 import 'bloc/states.dart';
 
@@ -95,14 +97,15 @@ class SignUpScreen extends StatelessWidget {
                       Center(
                         child: defaultbutton(
                             function: (){
-                              Navigator.of(context).push(MaterialPageRoute(builder: (context)=>VerifyScreen()));
+                              Navigator.of(context).push(MaterialPageRoute(builder: (context)=>ProfilePage()));
 
                             },
                             text: 'Sign up',
+                            textColor: Colors.white,
                             width: 259.w,
                             height: 48.h,
                             fontSizeText: 18.sp,
-                            backround: Color(0xFF6E1EFF)
+                            backround: Color(0xFF5A729E)
                         ),
                       ),
                       SizedBox(height: 35.h,),
@@ -127,17 +130,18 @@ class SignUpScreen extends StatelessWidget {
                               width: 116.w,
                               height: 46.h,
                               fontSizeText: 18.sp,
-                              backround: Color(0xFF7D7C7C)
+                              backround: Color(0xFFAEC3E3)
                           ),
                           defaultbutton(
                               function: (){
 
                               },
                               text: 'Facebook',
+
                               width: 116.w,
                               height: 46.h,
                               fontSizeText: 18.sp,
-                              backround: Color(0xFF7D7C7C)
+                              backround: Color(0xFFAEC3E3)
                           ),
                         ],
                       ),
