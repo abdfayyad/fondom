@@ -6,8 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../util/componantes/defaltbuttom.dart';
 import '../../../util/componantes/textform_register.dart';
 import '../../Verify_screen/prisentation/verify_screen.dart';
-import '../../profile/prisintation/profile/profile_page.dart';
-import '../../profile/prisintation/widget/profile/profile_page.dart';
+
 import 'bloc/cubit.dart';
 import 'bloc/states.dart';
 
@@ -97,7 +96,7 @@ class SignUpScreen extends StatelessWidget {
                       Center(
                         child: defaultbutton(
                             function: (){
-                              Navigator.of(context).push(MaterialPageRoute(builder: (context)=>ProfilePage()));
+                            //  Navigator.of(context).push(MaterialPageRoute(builder: (context)=>ProfilePage()));
 
                             },
                             text: 'Sign up',
