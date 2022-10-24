@@ -5,9 +5,12 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fondom2/src/features/Verify_screen/prisentation/verify_screen.dart';
 import 'package:fondom2/src/features/forget_password/prisentation/forget_password.dart';
 import 'package:fondom2/src/features/music_player/music_player.dart';
+import 'package:fondom2/src/features/profile/prisentation/screens/playlists.dart';
 
 import '../../../util/componantes/defaltbuttom.dart';
 import '../../../util/componantes/textform_register.dart';
+import '../../profile/prisentation/profile_screen.dart';
+import '../../profile/prisentation/screens/chat_room.dart';
 import 'bloc/cubit.dart';
 import 'bloc/status.dart';
 
@@ -148,7 +151,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         Center(
                           child: TextButton(
                               onPressed: () {
-                                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>ForgetPassword()));
+                                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>ProfilePage()));
 
                               },
                               child: const Text(
